@@ -17,9 +17,9 @@ Follow the "Downloading macOS" section in the Dortania guide to get macOS. ***Su
 - RAM: 16GB (8GB soldered, 8GB Kingston stick inserted)
 - Touchpad: Elan SMBus
 - Audio: Realtek ALC257
-- Wi-Fi: Intel Wireless-AC 8265
+- Wi-Fi: Broadcom DW1560 BCM94352Z
 - Ethernet: Intel I219-LM
-- SSD: Intel 7600p 256GB
+- SSD: SAMSUNG 860EVO 250GB
 
 # Set BIOS settings as follows
 - Config -> Network -> Wake On LAN -> Disabled
@@ -32,6 +32,14 @@ Follow the "Downloading macOS" section in the Dortania guide to get macOS. ***Su
 - Security -> Intel(R) SGX -> Intel (R) SGX Control -> Disabled
 - Startup -> UEFI/Legacy Boot -> UEFI Only
 - Startup -> CSM Support -> No
+
+# Patch system for WiFi
+
+1. Download [OpenCore Legacy Patcher (OCLP) -> OpenCore-Patcher-GUI.app.zip](https://github.com/dortania/OpenCore-Legacy-Patcher/releases).
+2. Open it, Click on Post Install Root Patch.
+3. Wait, and Click on Start Root Patching.
+4. Once the OCLP is launched as root, it will start patching the system volume.
+5. Once OCLP finishes patching the system volume, it will prompt to reboot. Click on Reboot to restart your system.
 
 # Credits
 - [Acidanthera](https://github.com/acidanthera) -- Made OpenCore, AppleALC, BlueToolFixup, BrightnessKeys, IntelMausi, Lilu, NVMeFix, SMCBatteryManager, SMCProcessor, SMCSuperIO, VirtualSMC, VoodooPS2Controller and WhateverGreen
